@@ -1,0 +1,261 @@
+/* ===== GERAL ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f1a14;
+    color: #f2f2f2;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    background-color: #14532d;
+    border-bottom: 3px solid #22c55e;
+}
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #22c55e;
+    color: #0f1a14;
+}
+
+/* ===== APRESENTAÇÃO ===== */
+.destaque {
+    padding: 60px 30px;
+}
+
+.destaque h1 {
+    font-size: 40px;
+    color: #4ade80;
+}
+
+.destaque p {
+    font-size: 18px;
+    color: #cfcfcf;
+}
+
+.botao-link {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-color: #22c55e;
+    color: #0f1a14;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao-link:hover {
+    background-color: #4ade80;
+}
+
+/* ===== CARDS ===== */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 180px;
+    padding: 20px;
+    background-color: #1a2e22;
+    border: 1px solid #2f5a3f;
+    border-radius: 10px;
+}
+
+.numero {
+    font-size: 40px;
+    font-weight: bold;
+    color: #4ade80;
+}
+
+.card p {
+    margin: 0;
+}
+
+.obs {
+    margin-top: 20px;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+/* ===== FORMULÁRIO ===== */
+#calculadora {
+    background-color: #1a2e22;
+    border: 1px solid #2f5a3f;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0f1a14;
+    color: #ffffff;
+    border: 1px solid #2f5a3f;
+    border-radius: 6px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #22c55e;
+}
+
+.linha {
+    display: flex;
+    gap: 12px;
+}
+
+.linha div {
+    flex: 1;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f1a14;
+    background-color: #22c55e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4ade80;
+}
+
+button.secundario {
+    margin-top: 8px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #2f5a3f;
+}
+
+/* ===== RESULTADO ===== */
+#resultado {
+    max-width: 420px;
+    margin: 24px auto 0;
+}
+
+.sucesso {
+    padding: 20px;
+    background-color: #0f1a14;
+    border: 2px solid #22c55e;
+    border-radius: 10px;
+}
+
+.sucesso .percentual {
+    display: block;
+    font-size: 44px;
+    font-weight: bold;
+    color: #4ade80;
+}
+
+.barra {
+    height: 12px;
+    margin: 12px 0;
+    background-color: #2f5a3f;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.barra-preenchida {
+    height: 100%;
+    background-color: #22c55e;
+}
+
+.erro {
+    padding: 15px;
+    color: #fecaca;
+    border: 2px solid #ef4444;
+    border-radius: 10px;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #9ca3af;
+    border-top: 1px solid #2f5a3f;
+}
+
+/* ===== CELULAR ===== */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    nav li {
+        margin: 8px 6px 0;
+    }
+
+    .destaque h1 {
+        font-size: 30px;
+    }
+
+    section {
+        margin: 30px 16px;
+        padding: 20px;
+    }
+}

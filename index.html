@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aproveitamento FC</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h2 class="logo">⚽ Aproveitamento FC</h2>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#como-funciona">Como funciona</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- APRESENTAÇÃO -->
+        <section id="inicio" class="destaque">
+            <h1 id="titulo">Seu time está brigando por quê?</h1>
+            <p>
+                Descubra os pontos e o aproveitamento de qualquer time no campeonato
+                a partir das vitórias, empates e derrotas.
+            </p>
+            <a href="#calculadora" class="botao-link">Calcular agora</a>
+        </section>
+
+        <!-- EXPLICAÇÃO -->
+        <section id="como-funciona">
+            <h2>Como funciona</h2>
+            <div class="cards">
+                <div class="card">
+                    <span class="numero">3</span>
+                    <p>pontos por vitória</p>
+                </div>
+                <div class="card">
+                    <span class="numero">1</span>
+                    <p>ponto por empate</p>
+                </div>
+                <div class="card">
+                    <span class="numero">0</span>
+                    <p>pontos por derrota</p>
+                </div>
+            </div>
+            <p class="obs">
+                Aproveitamento = pontos conquistados ÷ pontos disputados × 100
+            </p>
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section id="calculadora">
+            <h2>Calculadora de aproveitamento</h2>
+
+            <form id="formulario">
+                <label for="time">Nome do time</label>
+                <input type="text" id="time" placeholder="Ex.: Vasco da Gama" />
+
+                <div class="linha">
+                    <div>
+                        <label for="vitorias">Vitórias</label>
+                        <input type="number" id="vitorias" min="0" placeholder="0" />
+                    </div>
+                    <div>
+                        <label for="empates">Empates</label>
+                        <input type="number" id="empates" min="0" placeholder="0" />
+                    </div>
+                    <div>
+                        <label for="derrotas">Derrotas</label>
+                        <input type="number" id="derrotas" min="0" placeholder="0" />
+                    </div>
+                </div>
+
+                <button type="button" id="btnCalcular">Calcular</button>
+                <button type="button" id="btnLimpar" class="secundario">Limpar</button>
+            </form>
+
+            <div id="resultado"></div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Gustavo Tavares &copy; 2026 · Programação Web I</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
